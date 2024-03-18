@@ -1,0 +1,48 @@
+  question 1 solution
+# include <iostream> 
+using namespace std;
+int main( ) {
+	cout<<"physics \nwallah";	
+	return 0;	
+}
+
+
+
+question 2 solution
+int main() {
+    int a = 5,b=5; 
+	  int c=a+b;
+    cout<<c;
+
+
+
+
+question 3 
+int  -> 4byte
+float-> 4byte
+bool ->1byte
+
+
+
+question 4 
+void main(){
+	int a=4;
+int b=5;
+a++;b--;
+cout<<++a<<” “<<b–-;
+}
+
+solution
+the output of the following code is 6 4
+
+
+
+question 5
+int main() {
+    int r=10;
+    int pi=3.14;
+    int circumference=2*pi*r;
+    cout<<circumference;
+
+question 6
+_FLOAT
