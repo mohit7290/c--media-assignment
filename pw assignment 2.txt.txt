@@ -1,0 +1,87 @@
+question 1
+#include <iostream>
+using namespace std;
+int main()
+{
+int x;
+cout << "Enter first number\n";
+cin >> x; // user will give ‘x’ a value.
+int y, m;
+cout << "Enter second number and value for taking modulus\n";
+cin >> y >> m; // user will give ‘y’ a value.
+int Z = (x * y) % m;
+cout << "Output is: " << Z;
+
+=>solution output of 1st code is 0
+
+
+question2 
+#include <iostream>
+using namespace std;
+int main()
+{
+int x;
+cout<<"Enter first number\n";
+cin>>x; // user will give 'x' a value.
+int y;
+cout<<"Enter second number\n";
+cin>>y; // user will give 'y' a value.
+cout<<(x!=y)<<" "<<(x>=y);
+
+
+=> output of this code is 1 1
+
+
+question 3
+#include <iostream>
+using namespace std;
+int main()
+{
+int x,y;
+cin>>x>>y;
+x+=y;
+x-=y;
+x%=y;
+cout<<x;
+
+=> it will print low number 2
+
+
+
+question 4
+int main()
+{
+int r;
+cout<<"enter the radius";
+cin>>r;
+int h;
+cout<<"enter the height";
+cin>>h;
+int volume=3.14*r*r*h;
+cout<<volume;
+}
+
+question 5
+int main()
+{
+char a;
+cout<<"enter the 1st number";
+cin>>a;
+char b;
+cout<<"enter the 2nd numebr";
+cin>>b;
+cout<<char(b)-char(a);
+}
+
+
+question 6
+#include <iostream>
+using namespace std;
+int main()
+{
+int i = ( 4 + 7 / 5 * 6 * 6+9 )% 100 ;
+cout<<i;
+
+
+
+=>ouput is 49
