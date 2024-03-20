@@ -1,0 +1,190 @@
+question 1
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+while ('1' < '2')
+cout << "In while loop" << endl;
+}
+ 
+
+output of this code is infinite loop 
+it will print innite time in while loop
+beacause 1<2 is always true and it will not falae
+witjout increment or decreament
+
+
+question2 
+int main( ) {
+int t = 10;
+while (t /= 2) {
+cout << "Hello" << endl;
+}
+}
+
+
+output =>HELLO
+         HELLO
+         HELLO
+
+
+question 3
+#include <bits/stdc++.h>
+using namespace std;
+int main( ) {
+for (int x = 1; x * x <= 10; x++)
+cout << "In for loop" << endl;
+}
+
+
+output  => In for loop
+           In for loop
+           In for loop
+
+
+question 4
+#include <bits/stdc++.h>
+using namespace std;
+int main( ) {
+int x = 10, y = 0 ;
+while ( x >= y ) {
+x-- ;
+y++ ;
+cout << x << " " << y << endl ;
+}
+}
+
+
+output  => 9 1
+8 2
+7 3
+6 4
+5 5
+4 6
+
+
+
+
+question 5
+int main() {
+    int number, digit, sum = 0;
+    cout << "Enter a number: ";
+    cin >> number;
+
+    while (number > 0) {
+         digit = number % 10;
+     if  (digit % 2 == 0) {
+                 sum += digit;
+        }
+        number /= 10;
+    }
+    cout << "The sum of all the even digits of the given number is: " << sum << endl;
+
+
+
+
+question 6
+#include <iostream>
+using namespace std;
+int main() {
+    int num, reversedNum = 0, remainder;
+    
+    cout << "Enter a number: ";
+    cin >> num;
+    
+    int temp = num; 
+
+while (num != 0) {
+        remainder = num % 10;
+        reversedNum = reversedNum * 10 + remainder;
+        num /= 10;
+    }
+    int sum = temp + reversedNum;
+    
+    std::cout << "The sum of " << temp << " and its reverse " << reversedNum << " is: " << sum << std::endl;
+    
+    return 0;
+}
+
+
+
+
+question 7
+
+#include<iostream>
+using namespace std;
+int main(){
+	int n,i,j;
+	cout<<"enter a number";
+	cin>>n;
+	for(i=1;i<=n;i++){
+		int mul=1;
+		for(j=1;j<=i;j++){
+		mul=mul*j;
+		}	
+		cout<<mul<<endl;
+}
+}
+
+
+
+question 8
+
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout << "Enter the number of Fibonacci numbers to print: ";
+    cin >> n;
+    
+    int fib1 = 0, fib2 = 1, nextFib;
+    
+    cout << "Fibonacci Series: ";
+    
+    for (int i = 1; i <= n; ++i) {
+        if(i == 1) {
+            cout << fib1 << " ";
+            continue;
+        }
+        if(i == 2) {
+            cout << fib2 << " ";
+            continue;
+        }
+        nextFib = fib1 + fib2;
+        fib1 = fib2;
+        fib2 = nextFib;
+        cout << nextFib << " ";
+    }
+    
+    std::cout << std::endl;
+    
+    return 0;
+}
+
+
+
+question 9
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    std::cout << "Armstrong numbers between 1 and 500 are:" << std::endl;
+    
+    for (int num = 1; num <= 500; ++num) {
+        int originalNum, remainder, result = 0;
+        
+        originalNum = num;
+        
+                while (originalNum != 0) {
+            remainder = originalNum % 10;
+            result += remainder * remainder * remainder;
+            originalNum /= 10;
+        }
+        
+             if (result == num) {
+            cout << num << std::endl;
+        }
+    }
+    
+    return 0;
+}
